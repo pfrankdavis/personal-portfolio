@@ -1,10 +1,15 @@
+/* GLOBAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
     font-family: Montserrat;
+    background-image: url("assets/codeBackground.png");
+    background-size: 100vw 99vh;
+    background-repeat: no-repeat;
 }
 
-/* START NAV */
+/* NAV */
 
 nav {
     position: fixed;
@@ -14,7 +19,13 @@ nav {
     left: 0;
     background: linear-gradient(-90deg, rgba(209, 208, 208, 0.9), rgba(0, 0, 0, 0.9));
     text-decoration: none;
+    display: flex;
+}
 
+nav h1 {
+    margin: auto auto auto 1%;
+    color:#ffffff;
+    justify-items: left;
 }
 
 nav ul li {
@@ -30,46 +41,42 @@ nav ul li a {
     color: #000000;
 }
 
-/* END NAV */
-
-/* START WELCOME SECTION */
-
-.background-img {
-    background-image: url("assets/codeBackground.png");
-    background-size: 100% 100%;
+nav ul li a:hover {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
 }
+
+/* WELCOME SECTION */
 
 .welcome {
     background-color:rgba(250, 252, 253, 0.75);
     height: 100vh;
     display: flex;
     flex-direction: row;
-}
-#welcome-background {
-    height: 110%;
-    width: 110%;
-    position: absolute;
-    border-radius: none;
-    top: auto;
-    left: auto;
+    margin: -1% -1%;
 }
 
-.welcome img {
-    height: 50%;
+.welcome-img {
+    height: 60%;
     width: auto;
     border-radius: 50%;
-    margin: auto;
+    margin: auto 0px auto 10%;
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
     margin: auto;
     text-align: center;
 }
 
 .about img {
-    border-radius: 0px;
+    height: 50%;
+    width: auto;
+    margin: auto;
+    padding: 5px;
 }
 
 .welcome h1 {
@@ -95,25 +102,32 @@ nav ul li a {
     list-style: none;
 }
 
-/* END WELCOME SECTION */
+/* PROJECTS SECTION */
 
-/* START PROJECTS SECTION */
+section article {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
 
-#projects {
+
+.projects {
+    font-family: inherit;
     text-align: center;
     padding: 5px 0px 0px 0px;
     height: 95%;
     border-radius: 5px;
 }
 
-#project-section-header {
-    padding: 10px 0px 0px 0px;
+.projects h1 {
+    margin: auto;
+    padding: 50px;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 40px;
+    font-size: 75px;
+    font-weight: 700;
 }
 
-img {
+.projects img {
     width: 95%;
     padding: 8px;
 }
