@@ -54,11 +54,7 @@ nav ul li a {
     margin: auto;
 }
 
-h1 {
-    margin: auto;
-}
-
-#subtitle {
+#welcome-section p {
     font-family: inherit;
     font-size: 30px;
     font-weight: 500;
