@@ -12,7 +12,7 @@ nav {
     text-align: right;
     top: 0;
     left: 0;
-    background: rgba(209, 208, 208, 0.7);
+    background: linear-gradient(-90deg, rgba(209, 208, 208, 0.9), rgba(0, 0, 0, 0.9));
     text-decoration: none;
 
 }
@@ -34,31 +34,66 @@ nav ul li a {
 
 /* START WELCOME SECTION */
 
-#welcome-section {
-    background:rgba(250, 252, 253, 0.85);
-    text-align: center;
-    font-family: inherit;
-    font-size: 45px;
-    font-weight: 900;
+.background-img {
+    background-image: url("assets/codeBackground.png");
+    background-size: 100% 100%;
+}
+
+.welcome {
+    background-color:rgba(250, 252, 253, 0.75);
     height: 100vh;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
 }
+#welcome-background {
+    height: 110%;
+    width: 110%;
+    position: absolute;
+    border-radius: none;
+    top: auto;
+    left: auto;
+}
 
-#welcome-section img {
+.welcome img {
     height: 50%;
     width: auto;
     border-radius: 50%;
-    padding: auto;
     margin: auto;
 }
 
-#welcome-section p {
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.about img {
+    border-radius: 0px;
+}
+
+.welcome h1 {
+    margin: auto;
+    padding: 10px;
     font-family: inherit;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.welcome p {
+    font-family: inherit;
+    font-size: 20px;
     font-weight: 500;
     margin: auto;
+    padding: 0 15%;
+}
+
+.welcome ul {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
 }
 
 /* END WELCOME SECTION */
@@ -69,13 +104,11 @@ nav ul li a {
     text-align: center;
     padding: 5px 0px 0px 0px;
     height: 95%;
-    color:rgb(241, 239, 239);
     border-radius: 5px;
 }
 
 #project-section-header {
     padding: 10px 0px 0px 0px;
-    color:rgb(241, 239, 239);
     font-family: inherit;
     font-weight: 500;
     font-size: 40px;
@@ -109,19 +142,11 @@ img {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    color: rgb(163, 140, 7);
 }
 
 .project-title:hover {
-    color: rgb(186, 189, 8);
     font-size: 20px;
     transition: font-size 0.2s ease-in;
-}
-
-@media (max-width: 750px){
-    img {
-        max-width: 1fr; 
-    }
 }
 
 /* END PROJECTS SECTION */
@@ -130,7 +155,6 @@ img {
 
 #contact {
     text-align: center;
-    color:rgb(241, 239, 239);
     font-weight: 600;
     font-size: 30px;
     padding: 10px;
@@ -141,11 +165,9 @@ img {
     margin: 0px 15px;
     font-size: 25px;
     text-decoration: none;
-    color:rgb(241, 239, 239);
 }
 
 .contact-details:hover {
-    color:rgb(59, 2, 66);
     transition: color 0.3s ease-in;
 }
 
