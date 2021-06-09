@@ -4,7 +4,7 @@
 
 html {
     font-family: Montserrat;
-    background-image: url("assets/codeBackground.png");
+    background-image: url("assets/codeBackground.png"), url("assets/glgBackground.png");
     background-size: 100vw 99vh;
     background-repeat: no-repeat;
 }
@@ -109,8 +109,14 @@ section article {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    background: rgba(250, 252, 253, 0.75);
 }
 
+
+.glg-background {
+    background-image: url("assets/glgBackground.png");
+    background-size: 100% 100%;
+}
 
 .projects {
     font-family: inherit;
